@@ -20,7 +20,7 @@ export default function Buscador({ onSeleccionarMesa, onScrollMapa }: BuscadorPr
       }
 
       try {
-        const res = await axios.get(`/api/sugerencias?nombre=${nombre}`);
+        const res = await axios.get(`https://useful-book-endangered-floyd.trycloudflare.com/api/sugerencias?nombre=${nombre}`);
         setSugerencias(res.data);
       } catch (err) {
         console.error("Error obteniendo sugerencias:", err);
