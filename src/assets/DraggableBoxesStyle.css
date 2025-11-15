@@ -1,0 +1,66 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  aspect-ratio: 12 / 7;
+  border: 3px solid #222;
+  position: relative;
+  margin: 20px auto;
+  background-color: #fafafa;
+  overflow: hidden;
+  user-select: none;
+
+  background-image: url('../assets/cardalesMap.png');
+  background-size: cover;
+  background-position: center;
+}
+.box.highlight {
+  background-color: yellow !important;
+  box-shadow: 0 0 15px 5px orange;
+  transform: scale(1.2);
+}
+
+.box {
+  transition: all 0.3s ease; /* aplica transición a todos los cambios */
+}
+
+
+
+
+.box {
+  position: absolute;
+  border-radius: 6px;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  touch-action: none;
+}
+
+
+
+
+.box:active {
+  cursor: grabbing;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+  pointer-events: none;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .box {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    font-size: 8px;
+  }
+}
