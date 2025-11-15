@@ -161,6 +161,8 @@ export default function Buscador({ onSeleccionarMesa, onScrollMapa }: BuscadorPr
                 ? "🥦 Vegano"
                 : resultado.especial_id === 3
                 ? "🥗 Vegetariano"
+                : resultado.especial_id === 4
+                ? "🥗 Menu de niños de 9 años"
                 : resultado.especial_id === 5
                 ? "🍽️ Después de cena"
                 : ""}
